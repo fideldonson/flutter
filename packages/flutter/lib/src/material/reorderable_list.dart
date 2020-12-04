@@ -486,7 +486,7 @@ class _ReorderableListContentState extends State<_ReorderableListContent> with T
 
       // We build the draggable inside of a layout builder so that we can
       // constrain the size of the feedback dragging widget.
-      Widget child = LongPressDraggable<Key>(
+      Widget child = Draggable<Key>(
         maxSimultaneousDrags: 1,
         axis: widget.scrollDirection,
         data: toWrap.key,
